@@ -19,6 +19,8 @@ $(document).ready(function() {
 
 
 
+
+
 $(document).ready(function() {
 
     $(".unmute-notice").delay(500).fadeOut("fast");
@@ -60,6 +62,7 @@ $(document).ready(function() {
     $(".line-five").delay(2000).fadeOut("fast");
 
     $(".line-six").delay(42000).fadeIn("fast");
+    $(".carry").delay(42000).addClass(".carry");
     $(".line-six").delay(5700).fadeOut("fast");
 
     $(".line-seven").delay(48000).fadeIn("fast")
@@ -148,6 +151,8 @@ $(document).ready(function() {
     $(".hammer-line-two").delay(2600).fadeOut("fast");
 
     $(".hammer-line-three").delay(24000).fadeIn("fast");
+    $(".light-one").delay(24000).addClass("light-one");
+    $(".light-two").delay(24000).addClass("light-two");
     $(".hammer-line-three").delay(2500).fadeOut("fast");
 
     $(".hammer-line-four").delay(27500).fadeIn("fast");
@@ -163,6 +168,7 @@ $(document).ready(function() {
     $(".hammer-line-seven").delay(2800).fadeOut("fast");
 
     $(".hammer-line-eight").delay(41000).fadeIn("fast");
+    $(".hammer-line").delay(41000).addClass("hammer-line");
     $(".hammer-line-eight").delay(3000).fadeOut("fast");
 
    
@@ -225,6 +231,8 @@ $(document).ready(function() {
     $(".crazy-line-fifteen").delay(2000).fadeOut("fast");
 
     $(".crazy-line-sixteen").delay(52500).fadeIn("fast");
+    $(".hot").delay(525000).addClass("hot");
+    $(".cold").delay(52500).addClass("cold");
     $(".crazy-line-sixteen").delay(1300).fadeOut("fast");
 
     $(".crazy-line-seventeen").delay(54100).fadeIn("fast");
@@ -299,6 +307,7 @@ $(document).ready(function() {
     $(".champions-line-three").delay(2000).fadeOut("fast");
 
     $(".champions-line-four").delay(17000).fadeIn("fast");
+    $(".crime").delay(17000).addClass(".crime");
     $(".champions-line-four").delay(2500).fadeOut("fast");
 
     $(".champions-line-five").delay(21000).fadeIn("fast");
@@ -314,24 +323,28 @@ $(document).ready(function() {
     $(".champions-line-eight").delay(1500).fadeOut("fast");
 
     $(".champions-line-nine").delay(32000).fadeIn("fast");
-    $(".champions-line-nine").delay(2000).fadeOut("fast");
+    $(".champions-line-nine").delay(2500).fadeOut("fast");
 
     // $(".champions-line-ten").delay(0).fadeIn("fast");
     // $(".champions-line-ten").delay(0).fadeOut("fast");
 
     $(".champions-line-eleven").delay(38000).fadeIn("fast");
+    $(".champions-lyric").delay(38000).addClass("champions-lyric");
     $(".champions-line-eleven").delay(5000).fadeOut("fast");
 
     $(".champions-line-twelve").delay(45500).fadeIn("fast");
     $(".champions-line-twelve").delay(4500).fadeOut("fast");
 
     $(".champions-line-thirteen").delay(52500).fadeIn("fast");
+    $(".champions-lyric").delay(52500).addClass("champions-lyric");
     $(".champions-line-thirteen").delay(3000).fadeOut("fast");
 
     $(".champions-line-fourteen").delay(56000).fadeIn("fast");
+    $(".champions-lyric").delay(56000).addClass("champions-lyric");
     $(".champions-line-fourteen").delay(2800).fadeOut("fast");
 
     $(".champions-line-fifteen").delay(59000).fadeIn("fast");
+    $(".no").delay(59000).addClass("no");
     $(".champions-line-fifteen").delay(3000).fadeOut("fast");
 
     $(".champions-line-sixteen").delay(62500).fadeIn("fast");
