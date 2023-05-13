@@ -77,12 +77,15 @@ html, body {
     color: white;
     font-weight: 400;
     position: absolute;
-    margin-top: -200px;
+    margin-top: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 
-.start-journey>li {
+.start-journey {
     float: center;
     color: white;
     width: 400px;
@@ -103,7 +106,7 @@ html, body {
   }
 
   
-  .start-journey li:hover {
+  .start-journey :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
@@ -125,6 +128,18 @@ html, body {
     background: url(../images/queen-eleven.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0%;
+    animation: main 2s forwards;
+    animation-delay: 0.2s;
+}
+
+
+
+
+
+@keyframes main {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
 }
 
 .arrow{
@@ -220,7 +235,7 @@ html, body {
 
 
 
-.go-to-secondary>li {
+.go-to-secondary {
     float: center;
     color: white;
     width: 450px;
@@ -241,12 +256,12 @@ html, body {
   }
 
   
-   .go-to-secondary li:hover {
+   .go-to-secondary :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .start-experience>li {
+  .start-experience {
     float: center;
     color: white;
     width: 450px;
@@ -268,7 +283,7 @@ html, body {
   }
 
   
-   .start-experience li:hover {
+   .start-experience :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
@@ -288,9 +303,19 @@ html, body {
     background: url(../images/queen-seven.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0%;
+    animation: experience 2s forwards;
+    animation-delay: 0.2s;
 }
 
 
+
+
+
+@keyframes experience {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
 
 .instructions {
     float: center;
@@ -300,7 +325,6 @@ html, body {
     line-height: 60px;
     background: rgba(0, 0, 0, 0.51);
     border: 2px solid #FFFFFF;
-    cursor: pointer;
     font-family: "cormorant-garamond", serif;
     font-size: 34px;
     font-style: normal;
@@ -317,8 +341,15 @@ html, body {
 }
 
 
+/* .experience-links {
+    float: left;
+    min-width: 400px;
+    display: inline;
+} */
 
-.bohemian-rhapsody>li {
+
+
+.bohemian-rhapsody {
     color: white;
     width: 400px;
     height: 101px;
@@ -329,7 +360,7 @@ html, body {
     font-family: "cormorant-garamond", serif;
     font-size: 34px;
     font-style: normal;
-    left: 177px;
+    left: 10%;
     right: 0;
     position: absolute;
     top: 350px;
@@ -337,12 +368,12 @@ html, body {
   }
 
   
-  .bohemian-rhapsody li:hover {
+  .bohemian-rhapsody :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .radio>li {
+  .radio {
     float: center;
     color: white;
     width: 400px;
@@ -363,12 +394,12 @@ html, body {
   }
 
   
-  .radio li:hover {
+  .radio :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .hammer>li {
+  .hammer {
     color: white;
     width: 400px;
     height: 101px;
@@ -380,19 +411,19 @@ html, body {
     font-size: 34px;
     font-style: normal;
    
-    right: 177px;
+    right: 10%;
     position: absolute;
     top: 350px;
     text-align: center;
   }
 
   
-  .hammer li:hover {
+  .hammer :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .crazy-little>li {
+  .crazy-little {
     color: white;
     width: 400px;
     height: 101px;
@@ -403,7 +434,7 @@ html, body {
     font-family: "cormorant-garamond", serif;
     font-size: 30px;
     font-style: normal;
-    left: 177px;
+    left: 10%;
     right: 0;
     position: absolute;
     top: 550px;
@@ -411,12 +442,12 @@ html, body {
   }
 
   
-  .crazy-little li:hover {
+  .crazy-little :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
   
-  .rock-you>li {
+  .rock-you {
     float: center;
     color: white;
     width: 400px;
@@ -437,12 +468,12 @@ html, body {
   }
 
   
-  .rock-you li:hover {
+  .rock-you :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .champions>li {
+  .champions {
     color: white;
     width: 400px;
     height: 101px;
@@ -453,41 +484,184 @@ html, body {
     font-family: "cormorant-garamond", serif;
     font-size: 34px;
     font-style: normal;
-    right: 177px;
+    right: 10%;
     position: absolute;
     top: 550px;
     text-align: center;
   }
 
   
-  .champions li:hover {
+  .champions :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
 
-  .back-to-main>li {
+  .back-to-main-experience {
     color: white;
-    width: 300px;
+    width: 350px;
     height: 101px;
     line-height: 101px;
     background: rgba(0, 0, 0, 0.51);
     border: 2px solid #FFFFFF;
     cursor: pointer;
     font-family: "cormorant-garamond", serif;
-    font-size: 34px;
+    font-size: 28px;
     font-style: normal;
-    left: 177px;
+    left: 10%;
     position: absolute;
     top: 750px;
     text-align: center;
   }
 
   
-  .back-to-main li:hover {
+  .back-to-main-experience :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
+
+  @media screen and (max-width: 1080px) {
+    .bohemian-rhapsody {
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 25px;
+        font-style: normal;
+        left: 5%;
+        right: 0;
+        position: absolute;
+        top: 350px;
+        text-align: center;
+      
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .radio {
+        float: center;
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 25px;
+        font-style: normal;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 350px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .hammer {
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 25px;
+        font-style: normal;
+       
+        right: 5%;
+        position: absolute;
+        top: 350px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .crazy-little {
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 23px;
+        font-style: normal;
+        left: 5%;
+        right: 0;
+        position: absolute;
+        top: 550px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .rock-you {
+        float: center;
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 25px;
+        font-style: normal;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 550px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .champions {
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 25px;
+        font-style: normal;
+        right: 5%;
+        position: absolute;
+        top: 550px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .back-to-main-experience {
+        color: white;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(0, 0, 0, 0.51);
+        border: 2px solid #FFFFFF;
+        cursor: pointer;
+        font-family: "cormorant-garamond", serif;
+        font-size: 25px;
+        font-style: normal;
+        left: 5%;
+        position: absolute;
+        top: 750px;
+        text-align: center;
+    }
+  }
 
 
   .background-redirect-page {
@@ -496,10 +670,19 @@ html, body {
     background: url(../images/queen-two.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0%;
+    animation: redirect 3s forwards;
+    animation-delay: 1s;
+
 }
 
+    @keyframes redirect {
+        0% { opacity: 0%; }
+        100% { opacity: 100%; }
+    }
 
-.new-song>li {
+
+.new-song {
     float: center;
     color: white;
     width: 450px;
@@ -520,12 +703,12 @@ html, body {
   }
 
   
-  .new-song li:hover {
+  .new-song :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .redirect-back-to-main>li {
+  .redirect-back-to-main {
     float: center;
     color: white;
     width: 450px;
@@ -546,12 +729,12 @@ html, body {
   }
 
   
-  .redirect-back-to-main li:hover {
+  .redirect-back-to-main :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
 
-  .redirect-back-to-secondary>li {
+  .redirect-back-to-secondary {
     float: center;
     color: white;
     width: 450px;
@@ -572,7 +755,7 @@ html, body {
   }
 
   
-   .redirect-back-to-secondary li:hover {
+   .redirect-back-to-secondary :hover {
     background: rgba(0, 0, 0, 0.10);
     border: 2px solid #FFFFFF;
   } 
@@ -623,6 +806,7 @@ html, body {
 
 .cry{
 	animation: cry 2s forwards;
+    animation-delay: 1s;
 }
 
 @keyframes cry {
@@ -634,6 +818,10 @@ html, body {
 	animation: gun 2s forwards;
 }
 
+
+
+
+
 @keyframes gun {
    0% { color: white; font-size: 70px; }
    100% { color: grey; font-size: 100px; }
@@ -641,7 +829,7 @@ html, body {
 
 .dead{
 	animation: dead 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 
 @keyframes dead {
@@ -649,6 +837,17 @@ html, body {
    50% { color: red; font-size: 120px; }
    100% { color: red; font-size: 120px;}
 
+}
+
+.carry{
+    animation: line-six 2s forwards;
+    font-size: 70px;
+    animation-delay: 4s;
+}
+
+@keyframes line-six {
+	0% { font-size: 70px;  }
+    100% { font-size: 0px;  }
 }
 
 .oooh{
@@ -818,8 +1017,157 @@ html, body {
 }
 
 
+.light-one{
+	animation: light-one 0.5s forwards;
+    animation-delay: 1.2s;
+}
 
-.we-will-rock-you-text {
+@keyframes light-one {
+   0% { color: white; font-size: 70px; }
+   100% { color: yellow; font-size: 110px; }
+}
+
+.light-two{
+	animation: light-two 0.5s forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes light-two {
+   0% { color: white; font-size: 70px; }
+   100% { color: yellow; font-size: 110px; }
+}
+
+.but{
+	animation: but 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes but {
+   0% { color: white; font-size: 70px; }
+   100% { color: black; font-size: 110px; }
+}
+
+  
+.hammer-line {
+    animation: hammer-line 4s forwards;
+    font-size: 70px;
+}
+
+@keyframes hammer-line {
+	0% {
+		animation-timing-function: ease-out;
+		font-size: 80px;
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		font-size: 70px;
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		font-size: 80px;
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		font-size: 70px;
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		font-size: 80px;
+	}
+    57% {
+		animation-timing-function: ease-in;
+		font-size: 70px;
+	}
+
+	69% {
+		animation-timing-function: ease-out;
+		font-size: 80px;
+	}
+}
+
+
+
+
+
+
+
+.love {
+	animation: love 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes love {
+   0% { color: white; font-size: 70px; }
+   100% { color: red; font-size: 150px; }
+}
+
+
+
+
+.crazy-line-ten {
+    animation: shakes 2s ease 0s 1 normal forwards;
+    position: absolute;
+    left: 40%
+
+}
+
+@keyframes shakes {
+	0%,
+	100% {
+		transform: translateX(0);
+        transform-origin: center;
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+
+.cold {
+    animation: cold 1s forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes cold {
+    0% { color: white; font-size: 70px; }
+    100% { color: blue; font-size: 120px; }
+ }
+
+.hot {
+    animation: hot 1s forwards;
+    animation-delay: 0.8s;
+}
+
+ @keyframes hot {
+    0% { color: white; font-size: 70px; }
+    100% { color: red; font-size: 120px; }
+ }
+ 
+ 
+ .we-will-rock-you-text {
     width: 1700px;
     position: absolute;
     top: 50%;
@@ -879,63 +1227,88 @@ html, body {
 		animation-timing-function: ease-in;
 		font-size: 100px;
 	}
-
-	
 }
 
 
+.kicked {
+    animation: kicked 1s forwards;
+}
 
+@keyframes kicked {
+    0% { font-size: 70px; color: white; }
+    50% { font-size: 110px; color: black; }
+    100% { font-size: 70px; color: white; }
+}
 
+.champions-lyric {
+    animation: champions-lyric 1s forwards;
+    animation-delay: 2s;
 
+}
 
-.love {
-	animation: love 1s forwards;
+@keyframes champions-lyric {
+    0% { font-size: 70px; color: white; }
+    100% { font-size: 100px; color: yellow; }
+}
+
+.through{
+	animation: through 4s forwards;
     animation-delay: 1s;
 }
 
-@keyframes love {
+@keyframes through {
    0% { color: white; font-size: 70px; }
-   100% { color: red; font-size: 150px; }
-}
-
-
-
-
-.crazy-line-ten {
-    animation: shakes 2s ease 0s 1 normal forwards;
-    position: absolute;
-    left: 40%
+   50% { color: white; font-size: 110px; letter-spacing: 30px; }
+   100% { color: white; font-size: 110px; letter-spacing: 30px;}
 
 }
 
-@keyframes shakes {
-	0%,
-	100% {
-		transform: translateX(0);
-        transform-origin: center;
-	}
-
-	10%,
-	30%,
-	50%,
-	70% {
-		transform: translateX(-10px);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: translateX(10px);
-	}
-
-	80% {
-		transform: translateX(8px);
-	}
-
-	90% {
-		transform: translateX(-8px);
-	}
+.world{
+	animation: world 4s forwards;
+    animation-delay: 5s;
 }
+
+@keyframes world {
+   0% { color: white; font-size: 70px; }
+   50% { color: white; font-size: 110px; letter-spacing: 30px; }
+   100% { color: white; font-size: 110px; letter-spacing: 30px;}
+
+}
+
+.crime {
+    animation: crime 1s forwards;
+    animation-delay: 1.5s;
+
+}
+
+@keyframes crime {
+    0% { font-size: 70px; color: white; }
+    100% { font-size: 100px; color: red; }
+}
+
+.fighting {
+    animation: fighting 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fighting {
+    0% { font-size: 70px; color: white; }
+    50% { font-size: 110px; color: black; }
+    100% { font-size: 70px; color: white; }
+}
+
+.no {
+    animation: no 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes no {
+    0% { font-size: 70px; color: white; }
+    50% { font-size: 110px; color: black; }
+    100% { font-size: 70px; color: white; }
+}
+
+
 
   .unmute-notice{
     text-align: center;
